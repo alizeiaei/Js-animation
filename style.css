@@ -1,0 +1,44 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 3px rgb(133, 133, 133);
+  font-size: 80px;
+}
+
+h2::before {
+  content: "Js.Bootcamp...";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #01fe87;
+  border-right: 3px solid #01fe87;
+  -webkit-text-stroke: 0px;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 100%;
+  }
+}
